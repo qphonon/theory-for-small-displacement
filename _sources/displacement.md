@@ -1,6 +1,5 @@
 # Introduction
 
-
 Lattice dynamical studies\cite{Born56-book} are important for an 
 understanding of the 
 phase stability,\cite{VanDeWalle02v74,Gan10v49} ferroelectric transition,\cite{Zhong94v72} Raman and 
@@ -27,7 +26,7 @@ simplicity in implementations. In these methods,
 the Hellman-Feynman theorem\cite{Feynman39v56} when 
 a small displacement on an atom in an otherwise perfect supercell is made.
 The possibility to calculate exact 
-phonon frequencies at commensurate $\VEC{q}$ vectors
+phonon frequencies at commensurate $\vec{q}$ vectors
 using smaller non-diagonal unit cells\cite{Lloyd-Williams15v92} paves the way for
 very practical applications of these methods.
 The second 

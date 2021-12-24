@@ -110,21 +110,7 @@ The 230 space groups are built on top of
 the 32 crystallographic
 point groups (see e.g., Refs.~[{cite}`Dresselhaus2008-book`.)
 
-
-
-Example
-
-$$
-\begin{align}
-a_{11}& =b_{11}&
-  a_{12}& =b_{12}\\
-a_{21}& =b_{21}&
-  a_{22}& =b_{22}+c_{22}
-\end{align}
-$$
-
-
-...
+... to be continued...
 
 ```{bibliography}
 ```

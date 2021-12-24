@@ -42,6 +42,8 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -183,6 +185,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract">
+   Abstract
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -197,6 +212,36 @@
 <p class="admonition-title">Note</p>
 <p>I tried to turn a published paper “Efficacious symmetry-adapted atomic displacement method for lattice
 dynamical studies”, Computer Physics Communications 259 (2021) 107635 into a JupyterBook.</p>
+</div>
+<div class="section" id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
+<p>Small displacement methods have been successfully used to calculate the
+lattice dynamical properties of crystals.  It involves displacing atoms
+by a small amount in order to calculate the induced forces on all atoms
+in a supercell for the computation of force constants.  Even though
+these methods are widely in use, to our knowledge, there
+is no systematic discussion of optimal displacement directions from
+the crystal’s symmetry point of view nor a rigorous error analysis of
+such methods.  Based on the group theory and point group symmetry of a
+crystal, we propose displacement directions, with an equivalent concept
+of the group of <span class="math notranslate nohighlight">\(k\)</span>, deduced directly in the
+Cartesian coordinates rather than the usual fractional coordinates,
+that maintain the theoretical maximum for the triple product <span class="math notranslate nohighlight">\(V\)</span>
+spanned by the three displacements to avoid possible severe roundoff
+errors. The proposed
+displacement directions are generated from a minimal set
+of irreducible atomic displacements
+that keep the required independent force calculations to a minimum.
+We find the error in the calculated force constants explicitly depends on
+the inverse of <span class="math notranslate nohighlight">\(V\)</span> and inaccuracy of the forces. Test systems such as Si,
+graphene, and orthorhombic Sb2S3 are used to illustrate the
+method.  Our symmetry-adapted atomic displacement method is shown to be very robust in treating
+low-symmetry cells with a large `aspect ratio’ due to huge differences
+in lattice parameters, use of a large vacuum height,
+or a very oblique unit cell due to unconventional choice of primitive lattice vectors.
+It is expected that our atomic displacement
+strategy can be used to address higher-order interatomic interactions
+to achieve good accuracy and efficiency.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>

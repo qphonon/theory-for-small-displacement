@@ -1,6 +1,6 @@
 # Introduction
 
-Lattice dynamical studies{cite}`Born56-book` are important for an 
+Lattice dynamical studies{cite}`Born1956-book` are important for an 
 understanding of the 
 phase stability,{cite}`VanDeWalle02v74,Gan10v49` ferroelectric transition,{cite}`Zhong94v72` Raman and 
 infra-red spectroscopies,{cite}`Zhao13v13,Chong14v90,Giovanni18v5` 
@@ -12,7 +12,8 @@ Even though the concept of phonon emerges as a result of a harmonic approximatio
 via the quasiharmonic approximation (QHA){cite}`Mounet05v71`
 and Gr\"uneisen formalism{cite}`Allen20v34,Malica20v32` 
 allow thermal properties due to anharmonic effects such as 
-lattice thermal conductivities{cite}`Toher14v90`, a key quantity that determine the figure of merits for thermoelectrics{cite}{Snyder08v7,Madsen16v213,Gorai17v2`, as well as 
+lattice thermal conductivities{cite}`Toher14v90`, a key quantity that determine the figure of merits 
+for thermoelectrics{cite}`Snyder08v7,Madsen16v213,Gorai17v2`, as well as 
 thermal expansion  coefficients{cite}`Gan15v92,Arnaud16v93,Gan16v94,Romao17v96,Gan18v151,Gan19v31` to be evaluated.  An attempt has been made to extract  the third order interatomic force constants from
 the standard phonon calculations through the evaluation of Gr\"uneisen parameters{cite}`Lee17v96`.
 Phonon databases are being built{cite}`Petretto18v5,TogoPhononDB2020-link` with the
@@ -47,7 +48,7 @@ appropriate space group operations to deduce the displacement
 directions as long as the volume $V$
 spanned by the actual displacement directions is nonzero. 
 This strategy may have been inspired by the fact that
-space group operations{cite}`ITtable06-book` usually act on the 
+space group operations{cite}`ITtable2006-book` usually act on the 
 positions of atoms in fractional coordinates within a unit cell.
 However, as we shall show later, such
 implementation may result in a nonoptimal choice of the displacements of atoms that 

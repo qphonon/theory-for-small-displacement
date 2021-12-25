@@ -213,44 +213,40 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>Lattice dynamical studies\cite{Born56-book} are important for an
+<p>Lattice dynamical studies<span id="id1">[]</span> are important for an
 understanding of the
-phase stability,\cite{VanDeWalle02v74,Gan10v49} ferroelectric transition,\cite{Zhong94v72} Raman and
-infra-red spectroscopies,\cite{Zhao13v13,Chong14v90,Giovanni18v5}
-phonon-mediated superconductivity,\cite{Giustino17v89}
-ferroelastic transition,\cite{Togo08v78}
+phase stability,<span id="id2">[]</span> ferroelectric transition,<span id="id3">[]</span> Raman and
+infra-red spectroscopies,<span id="id4">[]</span>
+phonon-mediated superconductivity,<span id="id5">[]</span>
+ferroelastic transition,<span id="id6">[]</span>
 and
-thermodynamics of materials.\cite{Grimvall1999-book,Mujica03v75}
+thermodynamics of materials.<span id="id7">[]</span>
 Even though the concept of phonon emerges as a result of a harmonic approximation, its simple extensions
-via the quasiharmonic approximation (QHA)\cite{Mounet05v71}
-and Gr”uneisen formalism\cite{Allen20v34,Malica20v32}
+via the quasiharmonic approximation (QHA)<span id="id8">[]</span>
+and Gr”uneisen formalism<span id="id9">[]</span>
 allow thermal properties due to anharmonic effects such as
-lattice thermal conductivities\cite{Toher14v90}, a key quantity that determine the figure of merits for thermoelectrics\cite{Snyder08v7,Madsen16v213,Gorai17v2}, as well as
-thermal expansion  coefficients\cite{Gan15v92,Arnaud16v93,Gan16v94,Romao17v96,Gan18v151,Gan19v31} to be evaluated.  An attempt has been made to extract  the third order interatomic force constants from
-the standard phonon calculations through the evaluation of Gr”uneisen parameters\cite{Lee17v96}.
-Phonon databases are being built\cite{Petretto18v5,TogoPhononDB2020-link} with the
-help of high-throughput frameworks\cite{Curtarolo13v12,Ong13v68,Pizzi16v111} for data mining and machine learning.</p>
+lattice thermal conductivities<span id="id10">[]</span>, a key quantity that determine the figure of merits for thermoelectrics{cite}{Snyder08v7,Madsen16v213,Gorai17v2<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">as</span> <span class="pre">well</span> <span class="pre">as</span>&#160; <span class="pre">thermal</span> <span class="pre">expansion</span>&#160; <span class="pre">coefficients{cite}</span></code>Gan15v92,Arnaud16v93,Gan16v94,Romao17v96,Gan18v151,Gan19v31<code class="docutils literal notranslate"> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">evaluated.</span>&#160; <span class="pre">An</span> <span class="pre">attempt</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">made</span> <span class="pre">to</span> <span class="pre">extract</span>&#160; <span class="pre">the</span> <span class="pre">third</span> <span class="pre">order</span> <span class="pre">interatomic</span> <span class="pre">force</span> <span class="pre">constants</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">standard</span> <span class="pre">phonon</span> <span class="pre">calculations</span> <span class="pre">through</span> <span class="pre">the</span> <span class="pre">evaluation</span> <span class="pre">of</span> <span class="pre">Gr\&quot;uneisen</span> <span class="pre">parameters{cite}</span></code>Lee17v96<code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">Phonon</span> <span class="pre">databases</span> <span class="pre">are</span> <span class="pre">being</span> <span class="pre">built{cite}</span></code>Petretto18v5,TogoPhononDB2020-link<code class="docutils literal notranslate"> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">help</span> <span class="pre">of</span> <span class="pre">high-throughput</span> <span class="pre">frameworks{cite}</span></code>Curtarolo13v12,Ong13v68,Pizzi16v111` for data mining and machine learning.</p>
 <p>The methods to calculate phonon frequencies
 and eigenvectors naturally fall into two distinct approaches.
-One approach is based on the displacement methods\cite{Parlinski97v78,Wang14v185,Wang16v2,Ackland97v9,Togo15v108,Togo2020-github,Alfe09v180,Kresse95v32,Gan10v49} that gain popularity due to their
+One approach is based on the displacement methods<span id="id11">[]</span> that gain popularity due to their
 simplicity in implementations. In these methods,
 the force constants can be deduced from the induced forces via
-the Hellman-Feynman theorem\cite{Feynman39v56} when
+the Hellman-Feynman theorem<span id="id12">[]</span> when
 a small displacement on an atom in an otherwise perfect supercell is made.
 The possibility to calculate exact
 phonon frequencies at commensurate <span class="math notranslate nohighlight">\(\vec{q}\)</span> vectors
-using smaller non-diagonal unit cells\cite{Lloyd-Williams15v92} paves the way for
+using smaller non-diagonal unit cells<span id="id13">[]</span> paves the way for
 very practical applications of these methods.
 The second
 approach is
-based on the density-functional perturbation theory.\cite{Baroni01v73,Gonze97v55a}
+based on the density-functional perturbation theory.<span id="id14">[]</span>
 In this approach, the methods are very versatile because
 small unit cells rather than huge supercells
 are required. Very accurate energy derivatives could be analytically calculated
-within a computer code\cite{Giannozzi09v21,Gonze09v180}.
+within a computer code<span id="id15">[]</span>.
 Both approaches could be used together to
-complement each other\cite{Fu19v100} for the extraction of higher-order
-interatomic interactions.\cite{Parlinski18v98}</p>
+complement each other<span id="id16">[]</span> for the extraction of higher-order
+interatomic interactions.<span id="id17">[]</span></p>
 <p>A somewhat simple and effective implementation of
 a small displacement method is to use
 a few pre-selected directions in the fractional coordinates that are to be acted upon by
@@ -258,7 +254,7 @@ appropriate space group operations to deduce the displacement
 directions as long as the volume <span class="math notranslate nohighlight">\(V\)</span>
 spanned by the actual displacement directions is nonzero.
 This strategy may have been inspired by the fact that
-space group operations\cite{ITtable06-book} usually act on the
+space group operations<span id="id18">[]</span> usually act on the
 positions of atoms in fractional coordinates within a unit cell.
 However, as we shall show later, such
 implementation may result in a nonoptimal choice of the displacements of atoms that
@@ -280,7 +276,7 @@ coordinates rather than fractional coordinates
 that are designed to maintain (i) the theoretical maximum for the
 triple product <span class="math notranslate nohighlight">\(V\)</span> spanned by the three displacements
 to avoid possible severe roundoff errors, and (ii) a minimal set of irreducible atomic displacements for independent force calculations.
-To achieve these aims we rely on the concepts of the star of <span class="math notranslate nohighlight">\(k\)</span> and the group of <span class="math notranslate nohighlight">\(k\)</span>\cite{Dresselhaus2008-book}, defined originally in the
+To achieve these aims we rely on the concepts of the star of <span class="math notranslate nohighlight">\(k\)</span> and the group of <span class="math notranslate nohighlight">\(k\)</span><span id="id19">[<a class="reference internal" href="#id22">DDJ08</a>]</span>, defined originally in the
 reciprocal space but extended to real space in this paper.
 Various test systems such as Si, graphene, and orthorhombic
 \sbs{} are used to illustrate the method.
@@ -319,10 +315,10 @@ notation, while <span class="math notranslate nohighlight">\( {\overline p}\)</s
 improper rotation (i.e., a <span class="math notranslate nohighlight">\(p\)</span>-fold rotation followed by an inversion).
 The 230 space groups are built on top of
 the 32 crystallographic
-point groups (see e.g., Refs.~[<span id="id1">[<a class="reference internal" href="#id3">DDJ08</a>]</span>.)</p>
+point groups (see e.g., Refs.~[<span id="id20">[<a class="reference internal" href="#id22">DDJ08</a>]</span>.)</p>
 <p>… to be continued…</p>
-<p id="id2"><dl class="citation">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">DDJ08</a></span></dt>
+<p id="id21"><dl class="citation">
+<dt class="label" id="id22"><span class="brackets">DDJ08</span><span class="fn-backref">(<a href="#id19">1</a>,<a href="#id20">2</a>)</span></dt>
 <dd><p>M. S. Dresselhaus, G. Dresselhaus, and Ado Jorio. <em>Group theory: Application to the physics of condensed matter</em>. Springer-Verlag, Berlin, Heidelberg, 2008.</p>
 </dd>
 </dl>

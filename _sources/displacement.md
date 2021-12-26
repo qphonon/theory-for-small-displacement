@@ -353,8 +353,44 @@ are able to map $\vec{d}_k^i$ to $-\vec{d}_k^i$: one is the inversion
 operator, and the other a 
 2-fold rotation.
 
-\begin{table}
-\end{table}
+
+|Crystal | Symmetry  | $n_{\rm FD}$ | $n_{\rm CD}$ | 
+|:-------|------------------|----------------|-----------------|
+|Triclinic |    $C_1$  | 3 | 6 
+| |    $C_i$ | 3 | 3 
+|Monoclinic |    $C_2$ |  2 | 3 
+| |    $C_{s}$ | 2  | 4 
+| |    $C_{2h}$ | 2 | 2 
+|Orthorhombic |    $D_2$ | 1 | 2 | 
+| |    $C_{2v}$ | 1 | 2 | 
+| |    $D_{2h}$ | 1 | 1 | 
+|Tetragonal |    $C_4$ | 1 | 2 | 
+| |    $S_4$ | 1 | 2 | 
+| |    $C_{4h}$ | 1 | 1 | 
+| |    $D_4$ | 1 | 1 | 
+| |    $C_{4v}$ | 1 | 2 | 
+| |    $D_{2d}$ | 1 | 1 | 
+| |    $D_{4h}$ | 1 | 1 | 
+|Trigonal |    $C_3$ |1 | 2 
+| |    $S_6$ | 1 | 1 | 
+| |    $D_3$ | 1 | 1 | 
+| |    $C_{3v}$ | 1 | 2 | 
+| |    $D_{3d}$ | 1 | 1 | 
+|Hexagonal  |    $C_{6}$ | 1 | 2 | 
+| |    $C_{3h}$ | 1 | 2 | 
+| |    $C_{6h}$ | 1 | 1 | 
+| |    $D_{6}$ | 1 | 1 | 
+| |    $C_{6v}$ | 1 | 2 | 
+| |    $D_{3h}$ | 1 | 1 | 
+| |    $D_{6h}$ | 1 | 1 | 
+|Cubic |    $T$ | 1 | 1 | 
+| |    $T_h$ | 1 | 1 | 
+| |    $O$ | 1 | 1 | 
+| |    $T_d$ | 1 | 1 | 
+| |    $O_h$ | 1 | 1 | 
+
+$n_{\rm CD}$ ($n_{\rm FD}$) is the minimal number of displacements per atom for a central (forward) difference scheme.
+
 
 The task may at first seem arduous for all 32 crystallographic 
 point groups (see Table~\ref{tab:32PGs}). However, there are actually 
@@ -650,9 +686,17 @@ a correct implementation of the proposed methodology.
 The efficacy of the symmetry-adapted atomic displacement method is shown in Table II.
 
 
-$$
-Table here
-$$
+|        | symmetry-adapted | 6-displacement | All-displacemnt | 
+|:-------|------------------|----------------|-----------------|
+|MoS2    | 3                | 12             |              36 |
+|Bi2Se3  | 5                | 18             |              30 |
+|Sb2S3   | 20               | 30             |             120 |
+|Graphene| 1                | 6              |              12 | 
+
+The numbers of atomic displacements required
+for the symmetry-adapted, 6-displacement, and all-displacement methods.
+The numbers of displacements for 6-displacement and all-displacement methods are $6 n_{\rm ineq}$ and $6 n_{\rm c}$, respectively.
+Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_{\rm c}$ is the number of atoms in the unit cell.
 
 <!---
 \begin{table}
@@ -671,10 +715,6 @@ Graphene & 1 &  6 & 12 \\
 \end{tabular}
 \end{center}
 \caption{
-The numbers of atomic displacements required
-for the symmetry-adapted, 6-displacement, and all-displacement methods.
-The numbers of displacements for 6-displacement and all-displacement methods are $6 n_{\rm ineq}$ and $6 n_{\rm c}$, respectively.
-Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_{\rm c}$ is the number of atoms in the unit cell.
 }
 \label{tab:number}
 \end{table}

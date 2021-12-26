@@ -575,8 +575,178 @@ for a forward difference scheme. We note that two operations
 are able to map <span class="math notranslate nohighlight">\(\vec{d}_k^i\)</span> to <span class="math notranslate nohighlight">\(-\vec{d}_k^i\)</span>: one is the inversion
 operator, and the other a
 2-fold rotation.</p>
-<p>\begin{table}
-\end{table}</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Crystal</p></th>
+<th class="head"><p>Symmetry</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(n_{\rm FD}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(n_{\rm CD}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Triclinic</p></td>
+<td><p><span class="math notranslate nohighlight">\(C_1\)</span></p></td>
+<td><p>3</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_i\)</span></p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Monoclinic</p></td>
+<td><p><span class="math notranslate nohighlight">\(C_2\)</span></p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{s}\)</span></p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{2h}\)</span></p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Orthorhombic</p></td>
+<td><p><span class="math notranslate nohighlight">\(D_2\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{2v}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{2h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Tetragonal</p></td>
+<td><p><span class="math notranslate nohighlight">\(C_4\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_4\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{4h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_4\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{4v}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{2d}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{4h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Trigonal</p></td>
+<td><p><span class="math notranslate nohighlight">\(C_3\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(S_6\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_3\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{3v}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{3d}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Hexagonal</p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{6}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{3h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{6h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{6}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(C_{6v}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{3h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(D_{6h}\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Cubic</p></td>
+<td><p><span class="math notranslate nohighlight">\(T\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(T_h\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(O\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(T_d\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(O_h\)</span></p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math notranslate nohighlight">\(n_{\rm CD}\)</span> (<span class="math notranslate nohighlight">\(n_{\rm FD}\)</span>) is the minimal number of displacements per atom for a central (forward) difference scheme.</p>
 <p>The task may at first seem arduous for all 32 crystallographic
 point groups (see Table~\ref{tab:32PGs}). However, there are actually
 four distinct cases to consider. (See
@@ -856,10 +1026,41 @@ It is seen that the phonon dispersions
 obtained with both displacement methods are essentially the same that indicate
 a correct implementation of the proposed methodology.
 The efficacy of the symmetry-adapted atomic displacement method is shown in Table II.</p>
-<div class="math notranslate nohighlight">
-\[
-Table here
-\]</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p></p></th>
+<th class="head"><p>symmetry-adapted</p></th>
+<th class="head"><p>6-displacement</p></th>
+<th class="head"><p>All-displacemnt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>MoS2</p></td>
+<td><p>3</p></td>
+<td><p>12</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Bi2Se3</p></td>
+<td><p>5</p></td>
+<td><p>18</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Sb2S3</p></td>
+<td><p>20</p></td>
+<td><p>30</p></td>
+<td><p>120</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Graphene</p></td>
+<td><p>1</p></td>
+<td><p>6</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>The numbers of atomic displacements required
+for the symmetry-adapted, 6-displacement, and all-displacement methods.
+The numbers of displacements for 6-displacement and all-displacement methods are <span class="math notranslate nohighlight">\(6 n_{\rm ineq}\)</span> and <span class="math notranslate nohighlight">\(6 n_{\rm c}\)</span>, respectively.
+Here <span class="math notranslate nohighlight">\(n_{\rm ineq}\)</span> is the number of inequivalent atoms in the unit cell and <span class="math notranslate nohighlight">\(n_{\rm c}\)</span> is the number of atoms in the unit cell.</p>
 <!---
 \begin{table}
 \begin{center}
@@ -877,10 +1078,6 @@ Graphene & 1 &  6 & 12 \\
 \end{tabular}
 \end{center}
 \caption{
-The numbers of atomic displacements required
-for the symmetry-adapted, 6-displacement, and all-displacement methods.
-The numbers of displacements for 6-displacement and all-displacement methods are $6 n_{\rm ineq}$ and $6 n_{\rm c}$, respectively.
-Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_{\rm c}$ is the number of atoms in the unit cell.
 }
 \label{tab:number}
 \end{table}

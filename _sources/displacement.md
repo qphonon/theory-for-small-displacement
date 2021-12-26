@@ -82,10 +82,10 @@ To achieve these aims we rely on the concepts of the star of $k$ and the group o
 reciprocal space but extended to real space in this paper.
 Various test systems such as Si, graphene, and orthorhombic
 \sbs{} are used to illustrate the method.
-This paper is organized as follows. In Section~\ref{sec:method}
+This paper is organized as follows. In Section 2
 we provide the full details 
-of our displacement method to make judicious atomic displacements for all crystal symmetries.   Section~\ref{sec:FC_error} 
-presents an error analysis for the force constants. Results are shown in Section~\ref{sec:results}. Finally we conclude in Section~\ref{sec:conclusion}. Appendix
+of our displacement method to make judicious atomic displacements for all crystal symmetries.   Section 3
+presents an error analysis for the force constants. Results are shown in Section 4. Finally we conclude in Section 5. The Appendix
 A illustrates more clearly how $V$ may scale poorly with the lattice parameters or the choice of
 oblique unit cell for a few selected cases.
 
@@ -176,9 +176,8 @@ then the required force constant $\Phi_{ij}$ can be calculated from
 
 $$
 F^j = \lambda \Phi_{ij} d^i
-\label{eq:Phi}
-$$
-From Eq.~\ref{eq:Phi} 
+$$ (eq:Phi)
+From Eq.:eq:`eq:Phi`
 we see that the displacement vectors $\vec{d}_k^i$ do not
 need to point along the conventional Cartesian axes but in
 any directions as long as $d^i$ is not singular.

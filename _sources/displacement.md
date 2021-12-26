@@ -286,7 +286,7 @@ and $\vec{d}_2^i$ are nearly parallel to each other in the Cartesian coordinates
 However the operation is a physical reflection in the $xz$ plane and
 hence it is possible to force the angle between the two displaced vectors
 to be exactly $90^\circ$, thereby achieving the largest 
-determinant for $d^i$ of $1$ for matrix inversion in Eq.~\ref{eq:Phi}.
+determinant for $d^i$ of $1$ for matrix inversion in Eq.{eq}`eq:Phi`.
 
 In another example, a graphene sheet of
 a lattice constant $a$ and a vacuum thickness $c$ may use $\vec{g}_1^i =

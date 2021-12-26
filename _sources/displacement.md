@@ -1,3 +1,11 @@
+<!---
+Example of a block comment.
+\begin{figure}
+\centering\includegraphics[width=9.2cm,clip]{fig/2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
+\label{fig:2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
+\end{figure}
+--->
+
 # Introduction
 
 Lattice dynamical studies{cite}`Born1956-book` are important for an 
@@ -112,7 +120,7 @@ notation, while $ {\overline p}$ means an
 improper rotation (i.e., a $p$-fold rotation followed by an inversion).
 The 230 space groups are built on top of 
 the 32 crystallographic 
-point groups (see e.g., Refs.~[\onlinecite{Dresselhaus2008-book,Burns85-book}]).
+point groups (see e.g., Refs.~[{cite}`Dresselhaus2008-book,Burns1985-book`]).
 
 In the small displacement method{cite}`Liu14v16` for
 a phonon calculation of a crystal,
@@ -207,7 +215,7 @@ then only $6 N_0$ calculations are needed.
 
 However, it may still be possible to reduce the 6 calculations for each
 of $N_0$ inequivalent atoms using the 
-site symmetry{cite}`Burns85-book` of an inequivalent atom. The
+site symmetry{cite}`Burns1985-book` of an inequivalent atom. The
 site symmetry (this has the equivalent concept of the group of $k$, see
 for example Ref.~[\onlinecite{Altmann-book}]) of an inequivalent
 atom is one of the 32 
@@ -350,8 +358,9 @@ operator, and the other a
 
 The task may at first seem arduous for all 32 crystallographic 
 point groups (see Table~\ref{tab:32PGs}). However, there are actually 
-four distinct cases to consider.\footnote{See an implementation of our algorithm in fm-forces.f90
-  from https://github.com/qphonon/atomic-displacement}
+four distinct cases to consider. (See 
+an implementation of our algorithm in fm-forces.f90
+  from https://github.com/qphonon/atomic-displacement)
 The first case deals with
 the triclinic crystals and covers
 point groups 1 to 2 ($C_1$ and $C_i$)
@@ -484,9 +493,8 @@ without loss of generality we assume the axis of rotation for
 $C_2$ is in the $yz$ plane making an angle 
 $\theta$ with the $z$ axis where $(n_x, n_y, n_z) = 
 (0,\sin\theta,\cos\theta)$. This gives
-two solutions $(t,u,v) = 
-(\pm \sqrt{1- \frac{1}{3\sin^2\theta}}, 
-- \frac{\cos\theta}{\sqrt{3} \sin \theta}, \sqrt{\frac{1}{3}})$.
+two solutions $(t,u,v) = (\pm \sqrt{1- \frac{1}{3\sin^2\theta}}, - \frac{\cos\theta}{\sqrt{3} \sin \theta}, \sqrt{\frac{1}{3}})$.
+
 For $\theta = \frac{\pi}{2}$, $(t,u,v) = 
 ( \pm \sqrt{ \frac{2}{3}  }, 0, \sqrt{\frac{1}{3}})$.  
 As $\theta$ is decreased from $\frac{\pi}{2}$, 
@@ -612,38 +620,18 @@ This in turn gives a reasonable estimate of the force inaccuracy of $\lambda \ep
 with different $V$ values. 
 Noticeable differences in phonon dispersions are observed when $V $ reaches $10^{-6}$.
 
-$$
-Put in figure here
-$$
-
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
-\caption{
+```{figure} fig/2020-04-22-mpl-qphonon-det-gives-error-fit.png
 The error (filled triangle) characterized
 by the Frobenius norm of the force constant block $\phi_d  - \phi_{d_0}$ in Eq.~\ref{eq:Err}
 as a function $V = \det d$. The fitting form according to the RHS of Eq.~\ref{eq:Err} gives
 $\epsilon_0 = 3.7\times 10^{-4}$~eV/\AA$^2$.
-}
-\label{fig:2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
-\end{figure}
---->
+```
 
 
-$$
-Figure here
-$$
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-04-24-Si-Phonon-Det-1d-5-and-Det-1d-6.pdf}
-\caption{
-(a) The comparison of phonon dispersions obtained with $V = 10^{-5}$ and $V=1$. 
-(b) The comparison of phonon dispersions obtained with $V = 10^{-6}$ and $V=1$.
-}
-\label{fig:2020-04-24-Si-Phonon-Det-1d-5-and-Det-1d-6.pdf}
-\end{figure}
---->
 
+```{figure} fig/2020-04-24-Si-Phonon-Det-1d-5-and-Det-1d-6.png
+(a) The comparison of phonon dispersions obtained with $V = 10^{-5}$ and $V=1$.  (b) The comparison of phonon dispersions obtained with $V = 10^{-6}$ and $V=1$.
+```
 
 We select four representative systems to perform more phonon calculations.
 For each system, we first carry out a phonon calculation by using
@@ -693,14 +681,7 @@ Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_
 \end{table}
 --->
 
-
-$$
-Figure here
-$$
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-08-27-MoS2-Red-is-fmforces-Black-is-6displacement.pdf}
-\caption{
+```{figure} fig/2020-08-27-MoS2-Red-is-fmforces-Black-is-6displacement.png
 Phonon dispersions of hexagonal \mos{} with $a=3.123$ and $c = 12.087$~\AA{} obtained with 
 (a) symmetry-adapted atomic displacements and (b) six displacements for each of the two
 inequivalent atoms.
@@ -710,21 +691,10 @@ is $700$~eV.
 A $k$ mesh of $2 \times 2 \times 1$ is 
 used for electronic relaxation. 
 The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are 
-$\Gamma=[0,0,0]$, $M= [0,\frac{1}{2},0]$, $L=[0,\half,\half]$, and $H=[\frac{1}{3},\frac{1}{3},\half]$.
-}
-\label{fig:mos}
-\end{figure}
---->
+$\Gamma=[0,0,0]$, $M= [0,\frac{1}{2},0]$, $L=[0,\frac{1}{2},\frac{1}{2}]$, and $H=[\frac{1}{3},\frac{1}{3},\frac{1}{2}]$.
+```
 
-
-$$
-Figure here
-$$
-
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-08-28-Bi2Se3-fmforces-vs-6disp-LOTO.pdf}
-\caption{
+```{figure} fig/2020-08-28-Bi2Se3-fmforces-vs-6disp-LOTO.png
 Phonon dispersions of trigonal \bise{} with $a_r=9.621$~\AA, 
 $\alpha_r=24.64^\circ$, which corresponds to a conventional hexagonal cell of
 $a= 4.105 $ and $c=27.973$~\AA{}, obtained with (a) symmetry-adapted atomic displacements and (b) six displacements for each of the three
@@ -734,20 +704,10 @@ The supercell is $4 \times 4 \times 1$ of the
 conventional hexagonal unit cell. The cutoff energy for the plane-wave basis set is $423.2$~eV. A $k$ mesh of $4 \times 4 \times 2$ is 
 used for electronic relaxation.
 The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are 
-$\Gamma=[0,0,0]$, $L= [\half,0,0]$, $B=[\eta,\half,1-\eta]$, and $Z=[\half,\half,\half]$, where $\eta = (1+4 \cos \alpha_r)/ (2+ 4\cos\alpha_r)$.{cite}`Setyawan10v49`
-}
-\label{fig:bise}
-\end{figure}
---->
+$\Gamma=[0,0,0]$, $L= [\frac{1}{2},0,0]$, $B=[\eta,\frac{1}{2},1-\eta]$, and $Z=[\frac{1}{2},\frac{1}{2},\frac{1}{2}]$, where $\eta = (1+4 \cos \alpha_r)/ (2+ 4\cos\alpha_r)$.{cite}`Setyawan10v49`
+```
 
-$$
-Figure here
-$$
-
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-08-27-Sb2S3-fmforces-vs-6disp-LOTO.pdf}
-\caption{
+```{figure} fig/2020-08-27-Sb2S3-fmforces-vs-6disp-LOTO.png
 Phonon dispersions of orthorhombic \sbs{} with $a=11.011$, $b= 3.812 $, 
 and $c=10.794$~\AA{}  obtained with (a) symmetry-adapted atomic displacements and (b) six displacements for each of the five
 inequivalent atoms.
@@ -759,28 +719,20 @@ The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are
 $\Gamma=[0,0,0]$, $X=[\frac{1}{2},0,0]$, $S=[\frac{1}{2},\frac{1}{2},0]$,
 $R=[\frac{1}{2},\frac{1}{2},\frac{1}{2}]$,
 $T=[0,\frac{1}{2},\frac{1}{2}]$, and $Z=[0,0,\frac{1}{2}]$.  
-}
-\label{fig:sbs}
-\end{figure}
---->
+```
 
-$$
-Figure here
-$$
-
-<!---
-\begin{figure}
-\centering\includegraphics[width=9.2cm,clip]{fig/2020-08-27-Graphene-Red-fmforces-vs-Black-6displacements.pdf}
-\caption{
-Phonon dispersions of 2D graphene sheet with $a=2.462$~\AA{} and a vacuum height of $12$~\AA{} obtained 
+```{figure} fig/2020-08-27-Graphene-Red-fmforces-vs-Black-6displacements.png
+Phonon dispersions of 2D graphene sheet with $a=2.462$~\AA{} and a vacuum height of $12$~\AA{} obtained
 with  (a) a symmetry-adapted atomic displacement and (b) six displacements for the only
 inequivalent atom.
 A $4\times 4 \times 1$ supercell is used. The cutoff energy for the plane-wave basis set
-is $500$~eV. A $k$ mesh of $6 \times 6 \times 1$ is 
-used for electronic relaxation. 
-The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are 
+is $500$~eV. A $k$ mesh of $6 \times 6 \times 1$ is
+used for electronic relaxation.
+The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are
 $\Gamma=[0,0,0]$, $M= [0,\frac{1}{2},0]$, and $K = [\frac{1}{3},\frac{1}{3},0]$.
-}
+```
+
+<!---
 \label{fig:graphene}
 \end{figure}
 --->

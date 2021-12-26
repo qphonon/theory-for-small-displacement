@@ -201,7 +201,7 @@ the $i'$th equivalent atom and the $j'$th atom using
 
 $$
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
-$$ (eq:Phi)
+$$ (eq:Phiij)
 
 $R_c$ is as defined in Eq.{eq}`eq:Rc` and $ \{ R | \vec{t} \}  $
 maps the $i$th atom to the $i'$th atom, and

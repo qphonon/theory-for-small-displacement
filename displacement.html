@@ -404,10 +404,10 @@ d^i = [\vec{d}_1^i | \vec{d}_2^i | \vec{d}_3^i]
 \]</div>
 <p>then the required force constant <span class="math notranslate nohighlight">\(\Phi_{ij}\)</span> can be calculated from</p>
 <div class="math notranslate nohighlight" id="equation-eq-phi">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
 F^j = \lambda \Phi_{ij} d^i
 \]</div>
-<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(6)</a>
+<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(5)</a>
 we see that the displacement vectors <span class="math notranslate nohighlight">\(\vec{d}_k^i\)</span> do not
 need to point along the conventional Cartesian axes but in
 any directions as long as <span class="math notranslate nohighlight">\(d^i\)</span> is not singular.</p>
@@ -430,8 +430,8 @@ primitive cell and another <span class="math notranslate nohighlight">\(j\)</spa
 can be ``copied’’ out<span id="id29">[<a class="reference internal" href="#id573">LCSG14</a>]</span> to
 another <span class="math notranslate nohighlight">\(3\times 3\)</span> force constant matrix <span class="math notranslate nohighlight">\(\Phi_{i'j'}\)</span> between
 the <span class="math notranslate nohighlight">\(i'\)</span>th equivalent atom and the <span class="math notranslate nohighlight">\(j'\)</span>th atom using</p>
-<div class="math notranslate nohighlight" id="equation-eq-phi">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
+<div class="math notranslate nohighlight" id="equation-eq-phiij">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-phiij" title="Permalink to this equation">¶</a></span>\[
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
 \]</div>
 <p><span class="math notranslate nohighlight">\(R_c\)</span> is as defined in Eq.<a class="reference internal" href="#equation-eq-rc">(2)</a> and <span class="math notranslate nohighlight">\( \{ R | \vec{t} \}  \)</span>
@@ -893,10 +893,10 @@ error analysis for the displacement method. We shall
 focus on <span class="math notranslate nohighlight">\(\Phi_{ij}\)</span> which is
 the <span class="math notranslate nohighlight">\(3\times 3\)</span> force constant matrix block between
 the <span class="math notranslate nohighlight">\(i\)</span>th atom and the <span class="math notranslate nohighlight">\(j\)</span>th atom
-based on Eq.<a class="reference internal" href="#equation-eq-phi">(6)</a>.
+based on Eq.<a class="reference internal" href="#equation-eq-phi">(5)</a>.
 Since atom pairs are now understood, we
 suppress the
-index <span class="math notranslate nohighlight">\(i\)</span> in <span class="math notranslate nohighlight">\(d^i\)</span> and index <span class="math notranslate nohighlight">\(j\)</span> in <span class="math notranslate nohighlight">\(F^j\)</span>  for  forces in Eq. <a class="reference internal" href="#equation-eq-phi">(6)</a>.
+index <span class="math notranslate nohighlight">\(i\)</span> in <span class="math notranslate nohighlight">\(d^i\)</span> and index <span class="math notranslate nohighlight">\(j\)</span> in <span class="math notranslate nohighlight">\(F^j\)</span>  for  forces in Eq. <a class="reference internal" href="#equation-eq-phi">(5)</a>.
 We let the exact force <span class="math notranslate nohighlight">\(\vec{F}_k\)</span>
 to differ from the approximate force <span class="math notranslate nohighlight">\(\vec{f}_k\)</span>
 by an error term <span class="math notranslate nohighlight">\(\lambda \vec{\epsilon}_k\)</span> that

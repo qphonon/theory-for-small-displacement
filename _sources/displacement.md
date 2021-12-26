@@ -111,8 +111,7 @@ to a rotation matrix
 
 $$
 R_c = A^{-1} R A
-\label{eq:Rc}
-$$
+$$ (eq:Rc)
 in the Cartesian coordinates, which is restricted to 
 either $p$ or ${\overline p}$ for $p= 1$, $2$, $3$, $4$, and $6$. 
 $p$ means a $p$-fold rotation in the international 
@@ -205,7 +204,8 @@ the $i'$th equivalent atom and the $j'$th atom using
 $$
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
 $$
-$R_c$ is as defined in Eq.~\ref{eq:Rc} and $ \{ R | \vec{t} \}  $
+
+$R_c$ is as defined in Eq.{eq}`eq:Rc` and $ \{ R | \vec{t} \}  $
 maps the $i$th atom to the $i'$th atom, and
 the $j$th atom to the $j'$th atom.  $R_c^T$ is the matrix transpose of $R_c$.
 With this strategy alone (we call this the 6-displacement method), 

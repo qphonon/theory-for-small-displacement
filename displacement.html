@@ -343,10 +343,9 @@ unit cell.
 A space group operator <span class="math notranslate nohighlight">\(\{ R | \vec{t} \}\)</span>
 (in the Seitz notation) corresponds
 to a rotation matrix</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-rc">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-rc" title="Permalink to this equation">¶</a></span>\[
 R_c = A^{-1} R A
-\label{eq:Rc}
 \]</div>
 <p>in the Cartesian coordinates, which is restricted to
 either <span class="math notranslate nohighlight">\(p\)</span> or <span class="math notranslate nohighlight">\({\overline p}\)</span> for <span class="math notranslate nohighlight">\(p= 1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(3\)</span>, <span class="math notranslate nohighlight">\(4\)</span>, and <span class="math notranslate nohighlight">\(6\)</span>.
@@ -407,10 +406,10 @@ d^i = [\vec{d}_1^i | \vec{d}_2^i | \vec{d}_3^i]
 \]</div>
 <p>then the required force constant <span class="math notranslate nohighlight">\(\Phi_{ij}\)</span> can be calculated from</p>
 <div class="math notranslate nohighlight" id="equation-eq-phi">
-<span class="eqno">(1)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
 F^j = \lambda \Phi_{ij} d^i
 \]</div>
-<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(1)</a>
+<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(2)</a>
 we see that the displacement vectors <span class="math notranslate nohighlight">\(\vec{d}_k^i\)</span> do not
 need to point along the conventional Cartesian axes but in
 any directions as long as <span class="math notranslate nohighlight">\(d^i\)</span> is not singular.</p>
@@ -437,7 +436,7 @@ the <span class="math notranslate nohighlight">\(i'\)</span>th equivalent atom a
 \[
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
 \]</div>
-<p><span class="math notranslate nohighlight">\(R_c\)</span> is as defined in Eq.~\ref{eq:Rc} and <span class="math notranslate nohighlight">\( \{ R | \vec{t} \}  \)</span>
+<p><span class="math notranslate nohighlight">\(R_c\)</span> is as defined in Eq.<a class="reference internal" href="#equation-eq-rc">(1)</a> and <span class="math notranslate nohighlight">\( \{ R | \vec{t} \}  \)</span>
 maps the <span class="math notranslate nohighlight">\(i\)</span>th atom to the <span class="math notranslate nohighlight">\(i'\)</span>th atom, and
 the <span class="math notranslate nohighlight">\(j\)</span>th atom to the <span class="math notranslate nohighlight">\(j'\)</span>th atom.  <span class="math notranslate nohighlight">\(R_c^T\)</span> is the matrix transpose of <span class="math notranslate nohighlight">\(R_c\)</span>.
 With this strategy alone (we call this the 6-displacement method),

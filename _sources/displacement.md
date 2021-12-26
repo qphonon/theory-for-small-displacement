@@ -2,7 +2,6 @@
 Example of a block comment.
 \begin{figure}
 \centering\includegraphics[width=9.2cm,clip]{fig/2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
-\label{fig:2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
 \end{figure}
 --->
 
@@ -91,7 +90,6 @@ oblique unit cell for a few selected cases.
 
 
 # Methodology
-\label{sec:method}
 First we define a matrix 
 
 $$
@@ -254,7 +252,7 @@ coordinates $\vec{d}^i_k$ can be generated from the directions defined
 in the fractional coordinates $\vec{g}_k^i$ where 
 $ \vec{d}^i_k =  \frac{A \vec{g}_k^i}{ |  A \vec{g}_k^i  |   }$.  
 $\vec{g}_{k}^i$ may be chosen from a set of $S$ 
-that consists of \emph{nonzero}
+that consists of nonzero
 vectors of the form $ (e_1, e_2, e_3)^T$, where $e_n = 0, \pm
 1$ for $n= 1,2,3$ for simplicity.  By systematically applying the elements
 of the site symmetry to vectors in $S$, one may find a minimal set
@@ -317,14 +315,14 @@ $$
        a &  a \\
        -b &  b \\
   \end{pmatrix}
-$$
+$$ (eq:Fj)
 
 We then have
 
 $$
 \Phi_{ij}^2 = \frac{1}{2\lambda} \left( \frac{a^2}{b^2}  +1 \right)^{\frac{1}{2}}
  (\vec{F}_2^j -  \vec{F}_1^j)
-$$
+$$ (eq:Phiij2)
 If $a \gg b$, then
 $\vec{d}_1^i$ and $\vec{d}_2^i$ are almost parallel to each other resulting in
 very similar forces $\vec{F}_1^j$ and $\vec{F}_2^j$.
@@ -336,7 +334,7 @@ a large geometry factor $ \left( \frac{a^2}{b^2}  +1 \right)^{\frac{1}{2}}$.
 
 Now we present a method
 that will systematically deduce the displacement directions 
-directly in the \emph{Cartesian coordinates} for a
+directly in the Cartesian coordinates for a
 forward difference scheme with the aim of 
 maintaining a largest possible magnitude for the determinant of $d^i$ and
 a minimum number of independent displacements.
@@ -386,7 +384,7 @@ operator, and the other a
 | |    $T_d$ | 1 | 1 | 
 | |    $O_h$ | 1 | 1 | 
 
-Table1: $n_{\rm CD}$ ($n_{\rm FD}$) is the minimal number of displacements per atom for a central (forward) difference scheme.
+Table 1: $n_{\rm CD}$ ($n_{\rm FD}$) is the minimal number of displacements per atom for a central (forward) difference scheme.
 
 
 The task may at first seem arduous for all 32 crystallographic 
@@ -433,7 +431,7 @@ $ R_{\vec{n}}(\eta) = Q R_{z}(\eta)  Q^{-1}$.
 Once we find $\vec{d'}_k^i$ in the rotated frame,
 we obtain $\vec{d}_k^i = Q \vec{d'}^{i}_k$.
 
-\subsection{The first case}
+## The first case 
 First we consider the triclinic cell where there are two point groups $C_1 (1)$ and $C_i ({\overline 1})$.
 For $C_1 (1)$ the symmetry is so low that
 we simply propose to displace the $i$th atom in $x+$, $y+$, and $z+$, resulting in three independent displacements for 
@@ -449,7 +447,7 @@ for
 both the forward and central difference schemes (see the third
  row of Table 1.
 
-\subsection{The second case}
+## The second case
 For the monoclinic cell there are three point groups to consider.  We first
 consider $C_2 (2)$, we propose to use a
 first displacement $\vec{d'}^i_1 =
@@ -476,7 +474,7 @@ The third point group to consider is $C_{2h}$. Since there is an inversion opera
 the number of displacements
 for the forward and central difference schemes are the same, which is two.
 
-\subsection{The third case}
+## The third case
 For the next three point groups for the orthorhombic cells $D_2 (222)$,
 $C_{2v} (mm2)$, and $D_{2h}(mmm)$, we simply need to displace an atom
 in $\vec{d'}_1^i = \frac{1}{\sqrt{3}} (1,1,1)$ direction.  This direction is obtained by
@@ -499,7 +497,7 @@ that results in the same number (i.e., one)
 of independent displacement
 for both the forward and central difference schemes.
 
-\subsection{The fourth case}
+## The fourth case
 For the next 24 point groups from $C_4 (4)$ to $O_h (m{\overline 3}m)$
 covering tetragonal, trigonal, hexagonal, and cubic cells, we note
 that we have either $3$ or ${\overline 3}$ or $4$ or ${\overline 4}$ that
@@ -539,7 +537,6 @@ When  $\theta < \theta_c$, there is no real solution.
  
 
 # Error analysis for the force constants
-\label{sec:FC_error}
 Now we perform a detailed 
 error analysis for the displacement method. We shall 
 focus on $\Phi_{ij}$ which is
@@ -556,22 +553,22 @@ measures the intrinsic inaccuracies where
 
 $$
 \vec{f}_k = \vec{F}_k +  \lambda\vec{\epsilon}_k, \ \ k = 1, 2, 3
-$$
+$$ (eq:f_k)
 
 The calculated force constant block with $d$ 
 is given by
 
 $$
 \Phi_d &=&
-[ \VEC{f}_1 | \VEC{f}_2 | \VEC{f}_3] (\lambda d)^{-1} \nonumber
-\\ &=& F(\lambda d)^{-1} + [\VEC{\epsilon}_1 | \VEC{\epsilon}_2 | \VEC{\epsilon}_3]
-d^{-1} \nonumber
-\\ &= & \Phi_e +  \epsilon d^{-1}
+[ \vec{f}_1 | \vec{f}_2 | \vec{f}_3] (\lambda d)^{-1} \nonumber \\ 
+&=& F(\lambda d)^{-1} + [\vec{\epsilon}_1 | \vec{\epsilon}_2 | \vec{\epsilon}_3]
+d^{-1} \nonumber \\ 
+&= & \Phi_e +  \epsilon d^{-1}
 $$ (eq:Phid)
 
 where $\Phi_e$ is the exact force constant matrix and
 $\epsilon = [\vec{\epsilon}_1 | \vec{\epsilon}_2 | \vec{\epsilon}_3]$.
-Eq.~\ref{eq:Phid}
+Eq.{eq}`eq:Phid`
 clearly shows that the error can be attributed by the 
 intrinsic inaccuracy of the force and 
 the inverse of $d$, which could potentially be
@@ -581,15 +578,13 @@ we rely on
 
 $$
 \phi_d  - \phi_{d_0} = \epsilon ( d^{-1} - d_0^{-1})
-\label{eq:Err}
-$$
+$$ (eq:Err)
 where $d_0$ is chosen to be with the largest possible $V$.
 We will study the inaccuracy of 
 the calculated force constant as a function of $V$
 in the next section.
 
 # Results
-\label{sec:results}
 To confirm the methodology outline above, we 
 carry out density-functional theory (DFT) calculations within the local density
 approximation, with projector augmented-wave (PAW) pseudopotential
@@ -626,19 +621,18 @@ $x$ and $y$ go to $\frac{1}{\sqrt{3}}$.
 
 We investigate the error of the force constants
 as measured by the Frobenius norm  $||\phi_d - \phi_{d_0}||_F $
-as a function $V$ using Eq.~\ref{eq:Err}. We use $\det d_0 = 1$. 
-\Fig~\ref{fig:2020-04-22-mpl-qphonon-det-gives-error-fit.pdf}
-shows the error of the force constants
+as a function $V$ using Eq. {eq}`eq:Err`. We use $\det d_0 = 1$. 
+Fig 1 shows the error of the force constants
 linearly increases with decreasing $V = \det d$ .
 
-For an estimate of $\epsilon $ in Eq.~\ref{eq:Err} without a full
+For an estimate of $\epsilon $ in Eq. {eq}`eq:Err` without a full
 knowledge of the error of the induced forces, we proceed
 by assuming $\epsilon= \epsilon_0 J$, which
 is characterized by a single
 error parameter $\epsilon_0$ and an appropriate $J$ matrix. Our 
 aim is to 
 estimate  $\epsilon_0$ that measures the inaccuracy of the force by
-fitting the RHS of Eq.~\ref{eq:Err}.
+fitting the RHS of Eq. {eq}`eq:Err`.
 We observe that
 in the limit when $V $ is very small, the three displacement vectors
 $\vec{d}_1$, $\vec{d}_2$, and $\vec{d}_3$ become closer and closer 
@@ -648,16 +642,16 @@ To maximize error it is therefore reasonable to assume
 $\vec{\epsilon}_1 = \epsilon_0 (1,-1,-1)^T$, 
 $\vec{\epsilon}_2 = \epsilon_0 (-1,1,-1)^T$, and $
 \vec{\epsilon}_3 = \epsilon_0 (-1,-1,1)^T$. Under such assumption and 
-with Eq~\ref{eq:Err} we obtain a rather good fit and deduce $\epsilon_0 = 3.7\times 10^{-4} $~eV/\AA$^2$.
+with Eq {eq}`eq:Err` we obtain a rather good fit and deduce $\epsilon_0 = 3.7\times 10^{-4} $~eV/\AA$^2$.
 This in turn gives a reasonable estimate of the force inaccuracy of $\lambda \epsilon_0 = 5.6\times 10^{-6}$~eV/\AA.
-\Fig~\ref{fig:2020-04-24-Si-Phonon-Det-1d-5-and-Det-1d-6.pdf} shows  phonon dispersions
+Fig. 2 shows  phonon dispersions
 with different $V$ values. 
 Noticeable differences in phonon dispersions are observed when $V $ reaches $10^{-6}$.
 
 ```{figure} fig/2020-04-22-mpl-qphonon-det-gives-error-fit.png
 The error (filled triangle) characterized
-by the Frobenius norm of the force constant block $\phi_d  - \phi_{d_0}$ in Eq.~\ref{eq:Err}
-as a function $V = \det d$. The fitting form according to the RHS of Eq.~\ref{eq:Err} gives
+by the Frobenius norm of the force constant block $\phi_d  - \phi_{d_0}$ in Eq. {eq}`eq:Err`
+as a function $V = \det d$. The fitting form according to the RHS of Eq. {eq}`eq:Err` gives
 $\epsilon_0 = 3.7\times 10^{-4}$~eV/\AA$^2$.
 ```
 
@@ -675,14 +669,14 @@ Using identical computational parameters
 each inequivalent atom in the $x+$, $x-$, $y+$, $y-$, $z+$, and $z-$ along the Cartesian axes.
 The results for hexagonal \mos{} [space group (SG) \# 194],  trigonal \bise{} (SG \# 166), 
 orthorhombic \sbs{} (SG \# 62), and a 2D graphene sheet (SG \# 191) are shown
-in Figs. \ref{fig:mos}, \ref{fig:bise}, \ref{fig:sbs}, and ~\ref{fig:graphene}, 
+in Figs. 3, 4, 5, and 6, 
 respectively. 
 For all calculations the local density approximation is used, 
 and the magnitude of the displacement $\lambda $ is $0.015$~\AA{}.
 It is seen that the phonon dispersions 
 obtained with both displacement methods are essentially the same that indicate
 a correct implementation of the proposed methodology.
-The efficacy of the symmetry-adapted atomic displacement method is shown in Table II.
+The efficacy of the symmetry-adapted atomic displacement method is shown in Table 2.
 
 
 |        | symmetry-adapted | 6-displacement | All-displacemnt | 
@@ -692,32 +686,10 @@ The efficacy of the symmetry-adapted atomic displacement method is shown in Tabl
 |Sb2S3   | 20               | 30             |             120 |
 |Graphene| 1                | 6              |              12 | 
 
-The numbers of atomic displacements required
+Table 2:The numbers of atomic displacements required
 for the symmetry-adapted, 6-displacement, and all-displacement methods.
 The numbers of displacements for 6-displacement and all-displacement methods are $6 n_{\rm ineq}$ and $6 n_{\rm c}$, respectively.
 Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_{\rm c}$ is the number of atoms in the unit cell.
-
-<!---
-\begin{table}
-\begin{center}
-\begin{tabular}{l|c|c|c}
-\hline
-  & symmetry- & $6$-  & all-  \\
-  & adapted & displacement  & displacement  \\
-\hline
-\hline
-\mos  & 3 & 12 &  36 \\
-\bise & 5 & 18 & 30 \\
-\sbs &  20 & 30 & 120 \\
-Graphene & 1 &  6 & 12 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{
-}
-\label{tab:number}
-\end{table}
---->
 
 ```{figure} fig/2020-08-27-MoS2-Red-is-fmforces-Black-is-6displacement.png
 Phonon dispersions of hexagonal \mos{} with $a=3.123$ and $c = 12.087$~\AA{} obtained with 
@@ -770,14 +742,7 @@ The selected $\vec{q}$ points (in $\vec{b}_1$, $\vec{b}_2$, and $\vec{b}_3$) are
 $\Gamma=[0,0,0]$, $M= [0,\frac{1}{2},0]$, and $K = [\frac{1}{3},\frac{1}{3},0]$.
 ```
 
-<!---
-\label{fig:graphene}
-\end{figure}
---->
-
-
 # Conclusion
-\label{sec:conclusion}
 In summary, we have proposed 
 a systematic displacement method that
 guarantees a theoretical optimal volume $V$
@@ -821,7 +786,7 @@ Investigation of the determinant of $d$
 We consider a generic example of \sbs{} crystal with
 space group of  $Pnma$ (SG \# $62$) which has
 an orthorhombic cell.
-We shall investigate the determinant of $d$ (see Eq.~\ref{eq:dmat})
+We shall investigate the determinant of $d$ (see Eq. {eq}`eq:dmat`)
 as a function of cell dimensions $a$, $b$, and $c$. 
 For a general discussion we
 choose a primitive cell with $\vec{a}_1 = a\vec{i} + nb \vec{j}$, $\vec{a}_2 = b\vec{j}$, and

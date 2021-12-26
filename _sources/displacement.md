@@ -779,9 +779,7 @@ We thank the National Supercomputing Center, Singapore (NSCC) and A*STAR Computa
 Singapore (ACRC) for computing resources. This work is
 supported by RIE2020 Advanced Manufacturing and Engineering (AME) Programmatic Grant No A1898b0043.
 
-# Appendix
-
-Investigation of the determinant of $d$
+# Appendix: Investigation of the determinant of $d$
 
 We consider a generic example of \sbs{} crystal with
 space group of  $Pnma$ (SG \# $62$) which has

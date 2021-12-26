@@ -532,7 +532,7 @@ accuracy of force constants, we consider the force constants in the
 <span class="math notranslate nohighlight">\(xy\)</span> plane for the <span class="math notranslate nohighlight">\(4c\)</span> site of the
 <span class="math notranslate nohighlight">\(Pnma\)</span> space group. Here <span class="math notranslate nohighlight">\(\vec{d}_1^i = \frac{1}{\sqrt{a^2 + b^2}}(a,-b)^T\)</span>
 and <span class="math notranslate nohighlight">\(\vec{d}_2^i = \frac{1}{\sqrt{a^2+ b^2}}(a,b)^T\)</span>.
-From Eq.~\ref{eq:Phi}, we have</p>
+From Eq.<a class="reference internal" href="#equation-eq-phi">(5)</a>, we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 [\vec{F}_1^j | \vec{F}_2^j ] = \lambda [\Phi_{ij}^1| \Phi_{ij}^2] 
@@ -907,11 +907,14 @@ measures the intrinsic inaccuracies where</p>
 \]</div>
 <p>The calculated force constant block with <span class="math notranslate nohighlight">\(d\)</span>
 is given by</p>
-<p>Eqnarray here!</p>
-<div class="math notranslate nohighlight">
-\[
-Eqnarray
-\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-phid">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-phid" title="Permalink to this equation">¶</a></span>\[\begin{split}
+\Phi_d &amp;=&amp;
+[ \VEC{f}_1 | \VEC{f}_2 | \VEC{f}_3] (\lambda d)^{-1} \nonumber
+\\ &amp;=&amp; F(\lambda d)^{-1} + [\VEC{\epsilon}_1 | \VEC{\epsilon}_2 | \VEC{\epsilon}_3]
+d^{-1} \nonumber
+\\ &amp;= &amp; \Phi_e +  \epsilon d^{-1}
+\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\Phi_e\)</span> is the exact force constant matrix and
 <span class="math notranslate nohighlight">\(\epsilon = [\vec{\epsilon}_1 | \vec{\epsilon}_2 | \vec{\epsilon}_3]\)</span>.
 Eq.~\ref{eq:Phid}

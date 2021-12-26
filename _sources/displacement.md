@@ -307,7 +307,7 @@ accuracy of force constants, we consider the force constants in the
 $xy$ plane for the $4c$ site of the
 $Pnma$ space group. Here $\vec{d}_1^i = \frac{1}{\sqrt{a^2 + b^2}}(a,-b)^T$ 
 and $\vec{d}_2^i = \frac{1}{\sqrt{a^2+ b^2}}(a,b)^T$.
-From Eq.~\ref{eq:Phi}, we have
+From Eq.{eq}`eq:Phi`, we have
 
 
 $$
@@ -561,12 +561,14 @@ $$
 The calculated force constant block with $d$ 
 is given by
 
-
-Eqnarray here!
-
 $$
-Eqnarray
-$$
+\Phi_d &=&
+[ \VEC{f}_1 | \VEC{f}_2 | \VEC{f}_3] (\lambda d)^{-1} \nonumber
+\\ &=& F(\lambda d)^{-1} + [\VEC{\epsilon}_1 | \VEC{\epsilon}_2 | \VEC{\epsilon}_3]
+d^{-1} \nonumber
+\\ &= & \Phi_e +  \epsilon d^{-1}
+$$ (eq:Phid)
+
 where $\Phi_e$ is the exact force constant matrix and
 $\epsilon = [\vec{\epsilon}_1 | \vec{\epsilon}_2 | \vec{\epsilon}_3]$.
 Eq.~\ref{eq:Phid}

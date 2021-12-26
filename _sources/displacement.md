@@ -177,7 +177,7 @@ then the required force constant $\Phi_{ij}$ can be calculated from
 $$
 F^j = \lambda \Phi_{ij} d^i
 $$ (eq:Phi)
-From Eq.:eq:`eq:Phi`
+From Eq.{eq}`eq:Phi`
 we see that the displacement vectors $\vec{d}_k^i$ do not
 need to point along the conventional Cartesian axes but in
 any directions as long as $d^i$ is not singular.

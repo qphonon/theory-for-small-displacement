@@ -494,8 +494,7 @@ $C_2$ is in the $yz$ plane making an angle
 $\theta$ with the $z$ axis where $(n_x, n_y, n_z) = 
 (0,\sin\theta,\cos\theta)$. This gives
 two solutions $(t,u,v) = (\pm \sqrt{1- \frac{1}{3\sin^2\theta}}, - \frac{\cos\theta}{\sqrt{3} \sin \theta}, \sqrt{\frac{1}{3}})$.
-
-For $\theta = \frac{\pi}{2}$, $(t,u,v) = 
+ For $\theta = \frac{\pi}{2}$, $(t,u,v) = 
 ( \pm \sqrt{ \frac{2}{3}  }, 0, \sqrt{\frac{1}{3}})$.  
 As $\theta$ is decreased from $\frac{\pi}{2}$, 
 two solutions will approach one another along the circumference

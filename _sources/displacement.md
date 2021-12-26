@@ -386,11 +386,11 @@ operator, and the other a
 | |    $T_d$ | 1 | 1 | 
 | |    $O_h$ | 1 | 1 | 
 
-$n_{\rm CD}$ ($n_{\rm FD}$) is the minimal number of displacements per atom for a central (forward) difference scheme.
+Table1: $n_{\rm CD}$ ($n_{\rm FD}$) is the minimal number of displacements per atom for a central (forward) difference scheme.
 
 
 The task may at first seem arduous for all 32 crystallographic 
-point groups (see Table~\ref{tab:32PGs}). However, there are actually 
+point groups (see Table 1). However, there are actually 
 four distinct cases to consider. (See 
 an implementation of our algorithm in fm-forces.f90
   from https://github.com/qphonon/atomic-displacement)
@@ -447,7 +447,7 @@ inversion operator exists that could map $\vec{d'}_k^i$ to $-\vec{d'}_k^i$
 hence we need to do the same number of displacements (i.e., $3$)
 for
 both the forward and central difference schemes (see the third
- row of Table~\ref{tab:32PGs}).
+ row of Table 1.
 
 \subsection{The second case}
 For the monoclinic cell there are three point groups to consider.  We first
@@ -545,10 +545,10 @@ error analysis for the displacement method. We shall
 focus on $\Phi_{ij}$ which is
 the $3\times 3$ force constant matrix block between
 the $i$th atom and the $j$th atom
-based on Eq.~\ref{eq:Phi}.
+based on Eq.{eq}`eq:Phi`.
 Since atom pairs are now understood, we 
 suppress the
-index $i$ in $d^i$ and index $j$ in $F^j$  for  forces in Eq.~\ref{eq:Phi}.
+index $i$ in $d^i$ and index $j$ in $F^j$  for  forces in Eq. {eq}`eq:Phi`.
 We let the exact force $\vec{F}_k$
 to differ from the approximate force $\vec{f}_k$
 by an error term $\lambda \vec{\epsilon}_k$ that

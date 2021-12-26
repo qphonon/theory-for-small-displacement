@@ -96,8 +96,7 @@ First we define a matrix
 
 $$
 A=[ \vec{a}_1|\vec{a}_2 | \vec{a}_3] 
-\label{eq:A}
-$$
+$$ (eq:A)
 where
 the $i$th column of $A$ is taken from 
 the basic lattice translation vector $\vec{a}_i$ of a crystal.
@@ -163,14 +162,13 @@ constitute the $k$th column of a matrix $F^j$ where
 
 $$
 F^j = [\vec{F}_1^j | \vec{F}_2^j | \vec{F}_3^j ]
-$$
+$$ (eq:Fj)
 and similarly we
 let $\vec{d}_k^i$ to constitute the $k$th column of a displacement matrix $d^i$ where
 
 $$
 d^i = [\vec{d}_1^i | \vec{d}_2^i | \vec{d}_3^i] 
-\label{eq:dmat}
-$$
+$$ (eq:dmat)
 then the required force constant $\Phi_{ij}$ can be calculated from
 
 $$
@@ -203,7 +201,7 @@ the $i'$th equivalent atom and the $j'$th atom using
 
 $$
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
-$$
+$$ (eq:Phi)
 
 $R_c$ is as defined in Eq.{eq}`eq:Rc` and $ \{ R | \vec{t} \}  $
 maps the $i$th atom to the $i'$th atom, and

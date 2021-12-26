@@ -328,10 +328,9 @@ oblique unit cell for a few selected cases.</p>
 <h1>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h1>
 <p>\label{sec:method}
 First we define a matrix</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-a">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-a" title="Permalink to this equation">¶</a></span>\[
 A=[ \vec{a}_1|\vec{a}_2 | \vec{a}_3] 
-\label{eq:A}
 \]</div>
 <p>where
 the <span class="math notranslate nohighlight">\(i\)</span>th column of <span class="math notranslate nohighlight">\(A\)</span> is taken from
@@ -344,7 +343,7 @@ A space group operator <span class="math notranslate nohighlight">\(\{ R | \vec{
 (in the Seitz notation) corresponds
 to a rotation matrix</p>
 <div class="math notranslate nohighlight" id="equation-eq-rc">
-<span class="eqno">(1)<a class="headerlink" href="#equation-eq-rc" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-rc" title="Permalink to this equation">¶</a></span>\[
 R_c = A^{-1} R A
 \]</div>
 <p>in the Cartesian coordinates, which is restricted to
@@ -393,23 +392,22 @@ on all atoms in the supercell, in particular the induced force
 <span class="math notranslate nohighlight">\(\vec{F}_k^j\)</span> on the <span class="math notranslate nohighlight">\(j\)</span>th atom, <span class="math notranslate nohighlight">\(k=1,2,3\)</span>.
 If we make <span class="math notranslate nohighlight">\(\vec{F}_k^j\)</span> to
 constitute the <span class="math notranslate nohighlight">\(k\)</span>th column of a matrix <span class="math notranslate nohighlight">\(F^j\)</span> where</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-fj">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-fj" title="Permalink to this equation">¶</a></span>\[
 F^j = [\vec{F}_1^j | \vec{F}_2^j | \vec{F}_3^j ]
 \]</div>
 <p>and similarly we
 let <span class="math notranslate nohighlight">\(\vec{d}_k^i\)</span> to constitute the <span class="math notranslate nohighlight">\(k\)</span>th column of a displacement matrix <span class="math notranslate nohighlight">\(d^i\)</span> where</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-dmat">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-dmat" title="Permalink to this equation">¶</a></span>\[
 d^i = [\vec{d}_1^i | \vec{d}_2^i | \vec{d}_3^i] 
-\label{eq:dmat}
 \]</div>
 <p>then the required force constant <span class="math notranslate nohighlight">\(\Phi_{ij}\)</span> can be calculated from</p>
 <div class="math notranslate nohighlight" id="equation-eq-phi">
-<span class="eqno">(2)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
 F^j = \lambda \Phi_{ij} d^i
 \]</div>
-<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(2)</a>
+<p>From Eq.<a class="reference internal" href="#equation-eq-phi">(6)</a>
 we see that the displacement vectors <span class="math notranslate nohighlight">\(\vec{d}_k^i\)</span> do not
 need to point along the conventional Cartesian axes but in
 any directions as long as <span class="math notranslate nohighlight">\(d^i\)</span> is not singular.</p>
@@ -432,11 +430,11 @@ primitive cell and another <span class="math notranslate nohighlight">\(j\)</spa
 can be ``copied’’ out<span id="id29">[<a class="reference internal" href="#id573">LCSG14</a>]</span> to
 another <span class="math notranslate nohighlight">\(3\times 3\)</span> force constant matrix <span class="math notranslate nohighlight">\(\Phi_{i'j'}\)</span> between
 the <span class="math notranslate nohighlight">\(i'\)</span>th equivalent atom and the <span class="math notranslate nohighlight">\(j'\)</span>th atom using</p>
-<div class="math notranslate nohighlight">
-\[
+<div class="math notranslate nohighlight" id="equation-eq-phi">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-phi" title="Permalink to this equation">¶</a></span>\[
 \Phi_{i'j'} =  R_c \Phi_{ij} R_c^T
 \]</div>
-<p><span class="math notranslate nohighlight">\(R_c\)</span> is as defined in Eq.<a class="reference internal" href="#equation-eq-rc">(1)</a> and <span class="math notranslate nohighlight">\( \{ R | \vec{t} \}  \)</span>
+<p><span class="math notranslate nohighlight">\(R_c\)</span> is as defined in Eq.<a class="reference internal" href="#equation-eq-rc">(2)</a> and <span class="math notranslate nohighlight">\( \{ R | \vec{t} \}  \)</span>
 maps the <span class="math notranslate nohighlight">\(i\)</span>th atom to the <span class="math notranslate nohighlight">\(i'\)</span>th atom, and
 the <span class="math notranslate nohighlight">\(j\)</span>th atom to the <span class="math notranslate nohighlight">\(j'\)</span>th atom.  <span class="math notranslate nohighlight">\(R_c^T\)</span> is the matrix transpose of <span class="math notranslate nohighlight">\(R_c\)</span>.
 With this strategy alone (we call this the 6-displacement method),

@@ -667,7 +667,7 @@ the symmetry-adapted atomic displacements.
 Using identical computational parameters 
 (i.e., energy cutoff, $k$ mesh, etc), we carry out a second phonon calculation by displacing
 each inequivalent atom in the $x+$, $x-$, $y+$, $y-$, $z+$, and $z-$ along the Cartesian axes.
-The results for hexagonal \mos{} [space group (SG) \# 194],  trigonal \bise{} (SG \# 166), 
+The results for hexagonal MoS$_2$ [space group (SG) \# 194],  trigonal Bi$_2$Se$_3$ (SG \# 166), 
 orthorhombic Sb$_2$S$_3$ (SG \# 62), and a 2D graphene sheet (SG \# 191) are shown
 in Figs. 3, 4, 5, and 6, 
 respectively. 
@@ -692,7 +692,7 @@ The numbers of displacements for 6-displacement and all-displacement methods are
 Here $n_{\rm ineq}$ is the number of inequivalent atoms in the unit cell and $n_{\rm c}$ is the number of atoms in the unit cell.
 
 ```{figure} fig/2020-08-27-MoS2-Red-is-fmforces-Black-is-6displacement.png
-Phonon dispersions of hexagonal \mos{} with $a=3.123$ and $c = 12.087$~\AA{} obtained with 
+Phonon dispersions of hexagonal MoS$_2$ with $a=3.123$ and $c = 12.087$~\AA{} obtained with 
 (a) symmetry-adapted atomic displacements and (b) six displacements for each of the two
 inequivalent atoms.
 The effect of longitudinal optical (LO) and transverse optical (TO) splitting{cite}`Liu14v16` has been taken account.
@@ -705,7 +705,7 @@ $\Gamma=[0,0,0]$, $M= [0,\frac{1}{2},0]$, $L=[0,\frac{1}{2},\frac{1}{2}]$, and $
 ```
 
 ```{figure} fig/2020-08-28-Bi2Se3-fmforces-vs-6disp-LOTO.png
-Phonon dispersions of trigonal \bise{} with $a_r=9.621$~\AA, 
+Phonon dispersions of trigonal Bi$_2$Se$_3$ with $a_r=9.621$~\AA, 
 $\alpha_r=24.64^\circ$, which corresponds to a conventional hexagonal cell of
 $a= 4.105 $ and $c=27.973$~\AA{}, obtained with (a) symmetry-adapted atomic displacements and (b) six displacements for each of the three
 inequivalent atoms.

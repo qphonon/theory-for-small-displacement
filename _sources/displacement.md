@@ -798,23 +798,23 @@ atoms occupy the $4c$ Wyckoff position hence
 we may just consider any one of them. 
 The site symmetry for the $4c$ position 
 consists of just two elements:
-\be
+\begin{equation}
 I = 
   \begin{pmatrix}
        1 &  0 &  0 \\
        0 &  1 &  0 \\
        0 &  0 &  1 \\
   \end{pmatrix}
-\ee
+\end{equation}
 and
-\be
+\begin{equation}
 m = 
   \begin{pmatrix}
        1 &  0 &  0 \\
        0 & -1 &  0 \\
        0 &  0 &  1 \\
   \end{pmatrix}
-\ee
+\end{equation}
 which is a reflection across the $xz$ plane.
 
 $\vec{g}_1$ may be chosen to be $(1,-1,0)^T$ which will be mapped to
@@ -829,13 +829,13 @@ We find
 V &=& \det d \\
 &=& \frac{ \det A} { |A\vec{g}_1 | |A\vec{g}_2| |A\vec{g}_3|  } 
 \\ &=&  \frac{  2 a b   }{  \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }   }
-\eea
+\end{equation}a
 while the angle $\theta$ between 
 the displacements $\vec{d}^i_1$ and $\vec{d}_2^i$ 
 satisfies
-\be
+\begin{equation}
 \cos \theta = \frac{  a^2 + (n^2 -1 ) b^2   }{       \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }     }
-\ee
+\end{equation}
 
 When $n=0$, we find $V = \frac{2ab}{a^2 + b^2}$ (therefore $V \rightarrow 2 (a/b)^{-1} $ for $a \gg b$)
  and $\cos \theta =

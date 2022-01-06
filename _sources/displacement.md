@@ -261,7 +261,7 @@ $S_i$ will generate three $\vec{g}_k^i$ that form a nonzero determinant for $d^i
 This implementation has a slight drawback that may be illustrated by
 two similar
 orthorhombic systems Bi$_2$S$_3${cite}`Zhao11v84` and 
-\sbs{cite}`Liu14v16,Chong14v90,Gan15v92`
+Sb$_2$S$_3${cite}`Liu14v16,Chong14v90,Gan15v92`
 in the $Pnma$ setting, where $a \sim 11.3$~\AA, $b \sim 3.8 $~\AA, and $c \sim
 11.1$~\AA. Here $a$ is about three times larger than $b$.  
 There are twenty atoms in the primitive cell, with

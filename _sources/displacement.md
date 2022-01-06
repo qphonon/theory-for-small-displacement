@@ -798,6 +798,7 @@ atoms occupy the $4c$ Wyckoff position hence
 we may just consider any one of them. 
 The site symmetry for the $4c$ position 
 consists of just two elements:
+
 \begin{equation}
 I = 
   \begin{pmatrix}
@@ -807,6 +808,7 @@ I =
   \end{pmatrix}
 \end{equation}
 and
+
 \begin{equation}
 m = 
   \begin{pmatrix}
@@ -825,14 +827,16 @@ A second independent displacement is $\vec{g}_3 =
 As discussed in the main text, the actual displacement in the Cartesian coordinates is 
 $ \vec{d}_k^i =  \lambda \frac{A\vec{g_k}}{ | A\vec{g_k}   | }$, $k=1,2,3$. 
 We find 
-\bea
+
+\begin{eqnarray}
 V &=& \det d \\
 &=& \frac{ \det A} { |A\vec{g}_1 | |A\vec{g}_2| |A\vec{g}_3|  } 
 \\ &=&  \frac{  2 a b   }{  \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }   }
-\end{equation}a
+\end{eqnarray}
 while the angle $\theta$ between 
 the displacements $\vec{d}^i_1$ and $\vec{d}_2^i$ 
 satisfies
+
 \begin{equation}
 \cos \theta = \frac{  a^2 + (n^2 -1 ) b^2   }{       \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }     }
 \end{equation}

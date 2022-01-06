@@ -80,7 +80,7 @@ to avoid possible severe roundoff errors, and (ii) a minimal set of irreducible 
 To achieve these aims we rely on the concepts of the star of $k$ and the group of $k${cite}`Dresselhaus2008-book`, defined originally in the 
 reciprocal space but extended to real space in this paper.
 Various test systems such as Si, graphene, and orthorhombic
-\sbs{} are used to illustrate the method.
+Sb$_2$S$_3$ are used to illustrate the method.
 This paper is organized as follows. In Section 2
 we provide the full details 
 of our displacement method to make judicious atomic displacements for all crystal symmetries.   Section 3
@@ -668,7 +668,7 @@ Using identical computational parameters
 (i.e., energy cutoff, $k$ mesh, etc), we carry out a second phonon calculation by displacing
 each inequivalent atom in the $x+$, $x-$, $y+$, $y-$, $z+$, and $z-$ along the Cartesian axes.
 The results for hexagonal \mos{} [space group (SG) \# 194],  trigonal \bise{} (SG \# 166), 
-orthorhombic \sbs{} (SG \# 62), and a 2D graphene sheet (SG \# 191) are shown
+orthorhombic Sb$_2$S$_3$ (SG \# 62), and a 2D graphene sheet (SG \# 191) are shown
 in Figs. 3, 4, 5, and 6, 
 respectively. 
 For all calculations the local density approximation is used, 
@@ -718,7 +718,7 @@ $\Gamma=[0,0,0]$, $L= [\frac{1}{2},0,0]$, $B=[\eta,\frac{1}{2},1-\eta]$, and $Z=
 ```
 
 ```{figure} fig/2020-08-27-Sb2S3-fmforces-vs-6disp-LOTO.png
-Phonon dispersions of orthorhombic \sbs{} with $a=11.011$, $b= 3.812 $, 
+Phonon dispersions of orthorhombic Sb$_2$S$_3$ with $a=11.011$, $b= 3.812 $, 
 and $c=10.794$~\AA{}  obtained with (a) symmetry-adapted atomic displacements and (b) six displacements for each of the five
 inequivalent atoms.
 The effect of longitudinal optical (LO) and transverse optical (TO) splitting{cite}`Liu14v16` has been taken account.
@@ -781,7 +781,7 @@ supported by RIE2020 Advanced Manufacturing and Engineering (AME) Programmatic G
 
 # Appendix: Investigation of the determinant of $d$
 
-We consider a generic example of \sbs{} crystal with
+We consider a generic example of Sb$_2$S$_3$ crystal with
 space group of  $Pnma$ (SG \# $62$) which has
 an orthorhombic cell.
 We shall investigate the determinant of $d$ (see Eq. {eq}`eq:dmat`)

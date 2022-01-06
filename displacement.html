@@ -1190,29 +1190,31 @@ choose a primitive cell with <span class="math notranslate nohighlight">\(\vec{a
 unit vectors in the Cartesian directions. First we
 consider <span class="math notranslate nohighlight">\(n=0\)</span> that
 corresponds to the conventional primitive cell.</p>
-<p>For \sbs{} crystal, all five inequivalent
+<p>For Sb<span class="math notranslate nohighlight">\(_2\)</span>S<span class="math notranslate nohighlight">\(_3\)</span> crystal, all five inequivalent
 atoms occupy the <span class="math notranslate nohighlight">\(4c\)</span> Wyckoff position hence
 we may just consider any one of them.
 The site symmetry for the <span class="math notranslate nohighlight">\(4c\)</span> position
 consists of just two elements:</p>
-<p>\begin{equation}
-I =
-\begin{pmatrix}
-1 &amp;  0 &amp;  0 \
-0 &amp;  1 &amp;  0 \
-0 &amp;  0 &amp;  1 \
-\end{pmatrix}
-\end{equation}</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+I = 
+  \begin{pmatrix}
+       1 &amp;  0 &amp;  0 \\
+       0 &amp;  1 &amp;  0 \\
+       0 &amp;  0 &amp;  1 \\
+  \end{pmatrix}
+\end{split}\]</div>
 <p>and</p>
-<p>\begin{equation}
-m =
-\begin{pmatrix}
-1 &amp;  0 &amp;  0 \
-0 &amp; -1 &amp;  0 \
-0 &amp;  0 &amp;  1 \
-\end{pmatrix}
-\end{equation}
-which is a reflection across the <span class="math notranslate nohighlight">\(xz\)</span> plane.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m = 
+  \begin{pmatrix}
+       1 &amp;  0 &amp;  0 \\
+       0 &amp; -1 &amp;  0 \\
+       0 &amp;  0 &amp;  1 \\
+  \end{pmatrix}
+\end{split}\]</div>
+<p>which is a reflection across the <span class="math notranslate nohighlight">\(xz\)</span> plane.</p>
 <p><span class="math notranslate nohighlight">\(\vec{g}_1\)</span> may be chosen to be <span class="math notranslate nohighlight">\((1,-1,0)^T\)</span> which will be mapped to
 <span class="math notranslate nohighlight">\(\vec{g}_2 = (1,1,0)^T\)</span> under <span class="math notranslate nohighlight">\(m\)</span>.
 A second independent displacement is <span class="math notranslate nohighlight">\(\vec{g}_3 =
@@ -1220,17 +1222,19 @@ A second independent displacement is <span class="math notranslate nohighlight">
 <p>As discussed in the main text, the actual displacement in the Cartesian coordinates is
 <span class="math notranslate nohighlight">\( \vec{d}_k^i =  \lambda \frac{A\vec{g_k}}{ | A\vec{g_k}   | }\)</span>, <span class="math notranslate nohighlight">\(k=1,2,3\)</span>.
 We find</p>
-<p>\begin{eqnarray}
-V &amp;=&amp; \det d \
-&amp;=&amp; \frac{ \det A} { |A\vec{g}_1 | |A\vec{g}_2| |A\vec{g}_3|  }
-\ &amp;=&amp;  \frac{  2 a b   }{  \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }   }
-\end{eqnarray}
-while the angle <span class="math notranslate nohighlight">\(\theta\)</span> between
+<div class="math notranslate nohighlight">
+\[\begin{split}
+V &amp;=&amp; \det d \\
+&amp;=&amp; \frac{ \det A} { |A\vec{g}_1 | |A\vec{g}_2| |A\vec{g}_3|  } 
+\\ &amp;=&amp;  \frac{  2 a b   }{  \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }   }
+\end{split}\]</div>
+<p>while the angle <span class="math notranslate nohighlight">\(\theta\)</span> between
 the displacements <span class="math notranslate nohighlight">\(\vec{d}^i_1\)</span> and <span class="math notranslate nohighlight">\(\vec{d}_2^i\)</span>
 satisfies</p>
-<p>\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \cos \theta = \frac{  a^2 + (n^2 -1 ) b^2   }{       \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }     }
-\end{equation}</p>
+\]</div>
 <p>When <span class="math notranslate nohighlight">\(n=0\)</span>, we find <span class="math notranslate nohighlight">\(V = \frac{2ab}{a^2 + b^2}\)</span> (therefore <span class="math notranslate nohighlight">\(V \rightarrow 2 (a/b)^{-1} \)</span> for <span class="math notranslate nohighlight">\(a \gg b\)</span>)
 and <span class="math notranslate nohighlight">\(\cos \theta =
 \frac{a^2 - b^2}{a^2 + b^2}\)</span>. The last result

@@ -793,31 +793,31 @@ unit vectors in the Cartesian directions. First we
 consider $n=0$ that 
 corresponds to the conventional primitive cell.
 
-For \sbs{} crystal, all five inequivalent 
+For Sb$_2$S$_3$ crystal, all five inequivalent 
 atoms occupy the $4c$ Wyckoff position hence
 we may just consider any one of them. 
 The site symmetry for the $4c$ position 
 consists of just two elements:
 
-\begin{equation}
+$$
 I = 
   \begin{pmatrix}
        1 &  0 &  0 \\
        0 &  1 &  0 \\
        0 &  0 &  1 \\
   \end{pmatrix}
-\end{equation}
+$$
 
 and
 
-\begin{equation}
+$$
 m = 
   \begin{pmatrix}
        1 &  0 &  0 \\
        0 & -1 &  0 \\
        0 &  0 &  1 \\
   \end{pmatrix}
-\end{equation}
+$$
 which is a reflection across the $xz$ plane.
 
 $\vec{g}_1$ may be chosen to be $(1,-1,0)^T$ which will be mapped to
@@ -829,18 +829,18 @@ As discussed in the main text, the actual displacement in the Cartesian coordina
 $ \vec{d}_k^i =  \lambda \frac{A\vec{g_k}}{ | A\vec{g_k}   | }$, $k=1,2,3$. 
 We find 
 
-\begin{eqnarray}
+$$
 V &=& \det d \\
 &=& \frac{ \det A} { |A\vec{g}_1 | |A\vec{g}_2| |A\vec{g}_3|  } 
 \\ &=&  \frac{  2 a b   }{  \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }   }
-\end{eqnarray}
+$$
 while the angle $\theta$ between 
 the displacements $\vec{d}^i_1$ and $\vec{d}_2^i$ 
 satisfies
 
-\begin{equation}
+$$
 \cos \theta = \frac{  a^2 + (n^2 -1 ) b^2   }{       \sqrt{ a^2 + (n-1)^2 b^2    }   \sqrt{  a^2 + (n+1)^2 b^2   }     }
-\end{equation}
+$$
 
 When $n=0$, we find $V = \frac{2ab}{a^2 + b^2}$ (therefore $V \rightarrow 2 (a/b)^{-1} $ for $a \gg b$)
  and $\cos \theta =

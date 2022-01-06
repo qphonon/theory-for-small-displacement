@@ -807,6 +807,7 @@ I =
        0 &  0 &  1 \\
   \end{pmatrix}
 \end{equation}
+
 and
 
 \begin{equation}

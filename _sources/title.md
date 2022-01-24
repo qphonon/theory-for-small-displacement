@@ -3,7 +3,7 @@
 Chee Kwan Gan, Yun Liu, Tze Chien Sum, and Kedar Hippalgaonkar
 
 :::{note}
-I tried to turn a published paper Computer Physics Communications 259 (2021) 107635 into a JupyterBook.
+Computer Physics Communications 259 (2021) 107635
 :::
 
 ## Abstract
